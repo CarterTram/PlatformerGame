@@ -123,7 +123,7 @@ void Controller::gameLoop()
                 }
 
                 world.addObstacleObject(randomX, randomY + 300, 64, 64, ObstacleObject, world.getPlayer());
-                // Reset the flameSpawnTimer to the desired spawn interval
+                // Reset the spawn timer
                 flameSpawnTimer = 0.2f;
             }
             world.tick();

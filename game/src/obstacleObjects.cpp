@@ -47,7 +47,6 @@ bool ObstacleObjects::handleCollisions() {
 
     for (Entity* entity : collisions) {
         if (entity->getType() == Bear) {
-            // Bounce off player before destroying them
             speedX = -speedX;
             speedY = -speedY;
             player->playerGotHit();
